@@ -1,0 +1,59 @@
+import { useState } from 'react';
+import '../styles/Home.css';
+import { Link } from "react-router-dom";
+import ThemeToggle from '../components/ThemeToggle';
+
+const Home = ({ darkMode, setDarkMode }) => {
+  const [search, setSearch] = useState("");
+
+  const sections = [
+    { name: "LOGIN", path: "/" },
+    { name: "HOME", path: "/home" },
+    { name: "IMAGES", path: "/images" },
+    { name: "ICONS", path: "/icons" },
+    { name: "STAGES", path: "/stages" },
+    { name:"CONTENTS", path:"/contents" }
+  ];
+
+  const filteredSections = sections.filter(item =>
+    item.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div>
+      <header>
+        <h1 className='home__title'> Welcome to our Website </h1>
+        <div className="search__wrapper">
+          <input 
+            className='app__input' 
+            type="search" 
+            placeholder='Write your choosing section' 
+            value={search}
+            onChange={(e) => setSearch(e.target.value)} />
+
+          <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
+
+        <div className='home__description__container'>
+          <h3 className='home__description__title'> Assalomu alaykum hurmatli foydalanuvchilar 😇 </h3>
+          <p className='home__description'> Ushbu loyiha FrontEnd dasturlashni o‘rganayotganlar uchun maxsus yaratilgan. </p>
+          {search !== "" && (
+            <div className="home__sections">
+              <h4 className="home__sections__title"> Sections </h4>
+              {filteredSections.length > 0 ? (
+                <div className="home__section">
+                  {filteredSections.map((item) => (
+                    <li key={item.name}> <Link className="home__section__link" to={item.path}> {item.name} </Link> </li>
+              ))}
+            </div>
+              ) : (
+              <h3 className="not__found"> Section is not found ❌ </h3>
+              )}
+            </div>
+          )}
+        </div>
+      </header>
+    </div>
+  )
+}
+export default Home;
