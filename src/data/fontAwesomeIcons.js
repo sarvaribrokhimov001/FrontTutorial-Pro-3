@@ -33,6 +33,23 @@ const fontAwesomeIcons = [
   { name: "Globe", package: "fa", component: "<FaGlobe />", icon: <FaGlobe /> },
   { name: "Code", package: "fa", component: "<FaCode />", icon: <FaCode /> },
   { name: "Database", package: "fa", component: "<FaDatabase />", icon: <FaDatabase /> },
-  { name: "Bolt", package: "fa", component: "<FaBolt />", icon: <FaBolt /> }
+  { name: "Bolt", package: "fa", component: "<FaBolt />", icon: <FaBolt /> },
+  { name: "Shopping Bag", package: "fa", component: "<FaShoppingBag />", icon: <FaShoppingBag /> },
+  { name: "Bookmark", package: "fa", component: "<FaBookmark />", icon: <FaBookmark /> },
+  { name: "Map Marker", package: "fa", component: "<FaMapMarkerAlt />", icon: <FaMapMarkerAlt /> },
+  { name: "Calendar", package: "fa", component: "<FaCalendar />", icon: <FaCalendar /> },
+  { name: "Gift", package: "fa", component: "<FaGift />", icon: <FaGift /> },
+  { name: "Flag", package: "fa", component: "<FaFlag />", icon: <FaFlag /> },
+  { name: "Shield", package: "fa", component: "<FaShieldAlt />", icon: <FaShieldAlt /> },
+  { name: "Lock Open", package: "fa", component: "<FaLockOpen />", icon: <FaLockOpen /> },
+  { name: "Eye", package: "fa", component: "<FaEye />", icon: <FaEye /> },
+  { name: "Eye Slash", package: "fa", component: "<FaEyeSlash />", icon: <FaEyeSlash /> },
+  { name: "Microphone", package: "fa", component: "<FaMicrophone />", icon: <FaMicrophone /> },
+  { name: "Volume Up", package: "fa", component: "<FaVolumeUp />", icon: <FaVolumeUp /> },
+  { name: "Volume Mute", package: "fa", component: "<FaVolumeMute />", icon: <FaVolumeMute /> },
+  { name: "Sync", package: "fa", component: "<FaSync />", icon: <FaSync /> },
+  { name: "Link", package: "fa", component: "<FaLink />", icon: <FaLink /> },
+  { name: "Lock", package: "fa", component: "<FaLock />", icon: <FaLock /> },
+  { name: "Unlock", package: "fa", component: "<FaUnlock />", icon: <FaUnlock /> }
 ];
 export default fontAwesomeIcons;

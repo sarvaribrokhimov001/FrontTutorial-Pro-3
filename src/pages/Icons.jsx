@@ -13,7 +13,6 @@ import lucideIcons from "../data/lucideIcons";
 import boxIcons from "../data/boxIcons";
 import phosphorIcons from "../data/phosphorIcons";
 import techIcons from "../data/techIcons";
-import { FaReact } from "react-icons/fa";
 
   const icons = [
   ...fontAwesomeIcons,

@@ -21,6 +21,17 @@ const materialIcons = [
   { name: "Dark Mode", package: "md", component: "<MdDarkMode />", icon: <MdDarkMode /> },
   { name: "Light Mode", package: "md", component: "<MdLightMode />", icon: <MdLightMode /> },
   { name: "Star", package: "md", component: "<MdStar />", icon: <MdStar /> },
-  { name: "Bookmark", package: "md", component: "<MdBookmark />", icon: <MdBookmark /> }
+  { name: "Bookmark", package: "md", component: "<MdBookmark />", icon: <MdBookmark /> },
+  { name: "Add", package: "md", component: "<MdAdd />", icon: <MdAdd /> },
+  { name: "Remove", package: "md", component: "<MdRemove />", icon: <MdRemove /> },
+  { name: "Check", package: "md", component: "<MdCheck />", icon: <MdCheck /> },
+  { name: "Close", package: "md", component: "<MdClose />", icon: <MdClose /> },
+  { name: "Download", package: "md", component: "<MdDownload />", icon: <MdDownload /> },
+  { name: "Upload", package: "md", component: "<MdUpload />", icon: <MdUpload /> },
+  { name: "Calendar", package: "md", component: "<MdCalendarToday />", icon: <MdCalendarToday /> },
+  { name: "Map", package: "md", component: "<MdMap />", icon: <MdMap /> },
+  { name: "Location", package: "md", component: "<MdLocationOn />", icon: <MdLocationOn /> },
+  { name: "Wifi", package: "md", component: "<MdWifi />", icon: <MdWifi /> },
+  { name: "Battery", package: "md", component: "<MdBatteryFull />", icon: <MdBatteryFull /> }
 ];
 export default materialIcons;
